@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">   
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <title>Shop</title>
+</head>
+<body>
+    <section class="py-5 relative ">
+        <div class="w-full max-w-7xl px-4 md:px-5   lg-6 mx-auto border-2 border-200-zinc rounded-xl shadow-md">
+
+            <h2 class="title font-manrope font-bold text-4xl leading-10 mb-4 text-center text-black pt-3">Shopping Cart
+            </h2>
+            <div class="hidden lg:grid grid-cols-2 py-6">
+                <div class="font-normal text-xl leading-8 text-gray-500">Product</div>
+                <p class="font-normal text-xl leading-8 text-gray-500 flex items-center justify-between">
+                    <span class="w-full max-w-[200px] text-center"></span>
+                    <span class="w-full max-w-[260px] text-center">Quantity</span>
+                    <span class="w-full max-w-[200px] text-center">Total</span>
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 min-[550px]:gap-6 border-t border-gray-200 py-6" id="product1">
+                <div
+                    class="flex items-center flex-col min-[550px]:flex-row gap-3 min-[550px]:gap-6 w-full max-xl:justify-center max-xl:max-w-xl max-xl:mx-auto">
+                    <div class="img-box"><img src="https://pagedone.io/asset/uploads/1701162850.png" alt="perfume bottle image" class="xl:w-[140px]"></div>
+                    <div class="pro-data w-full max-w-sm ">
+                        <h5 class="font-semibold text-xl leading-8 text-black max-[550px]:text-center">Latest N-5
+                            Perfuam
+                        </h5>
+                        <p
+                            class="font-normal text-lg leading-8 text-gray-500 my-2 min-[550px]:my-3 max-[550px]:text-center">
+                            Perfumes</p>
+                        <h6 class="font-medium text-lg leading-8 text-indigo-600  max-[550px]:text-center">$120 
+                            
+                            <i class=" heart fa-lg fa-regular fa-heart" style="color: #121fd7;"></i>
+                            
+                    </div>
+                </div>
+                <div
+                    class="flex items-center flex-col min-[550px]:flex-row w-full max-xl:max-w-xl max-xl:mx-auto gap-2">
+
+
+                    
+                    <h6 class="font-manrope font-bold text-2xl leading-9 text-black w-full max-w-[176px] text-center">
+                        
+                         <!----------------------------------------DEELETE BUTTON------------------------------------------------------>
+                        <button class=" delete px-4 py-2 border border-gray-300 rounded-full hover:bg-gray-50 transition-all">X</button>
+                        
+
+
+
+
+                          <span class="text-sm text-gray-300 ml-3 lg:hidden whitespace-nowrap">(Remove Product)</span></h6>
+                         <div class="flex items-center w-full mx-auto justify-center">
+
+
+                             <!-------------------------------------- SUBSTRUCTION BUTTON ---------------------------------------->
+                        <button
+                            class=" substraction group rounded-l-full px-6 py-[18px] border border-gray-200 flex items-center justify-center shadow-sm shadow-transparent transition-all duration-500 hover:shadow-gray-200 hover:border-gray-300 hover:bg-gray-50"  >
+                            <svg class="stroke-gray-900 transition-all duration-500 group-hover:stroke-black"
+                                xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                fill="none">
+                                <path d="M16.5 11H5.5" stroke="" stroke-width="1.6" stroke-linecap="round" />
+                                <path d="M16.5 11H5.5" stroke="" stroke-opacity="0.2" stroke-width="1.6"
+                                    stroke-linecap="round" />
+                                <path d="M16.5 11H5.5" stroke="" stroke-opacity="0.2" stroke-width="1.6"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+
+                        <!-- -------------------------------------------INPUT VALUE--------------------------------------------------- -->
+                        <input type="text"
+                            class=" quantity border-y border-gray-200 outline-none text-gray-900 font-semibold text-lg w-full max-w-[118px] min-w-[80px]  py-[15px] text-center " value="0"
+                           >
+
+                            <!-- ------------------------------------------ADDDITION BUTTON ---------------------------------------------->
+                        <button
+                            class="addition group rounded-r-full px-6 py-[18px] border border-gray-200 flex items-center justify-center shadow-sm shadow-transparent transition-all duration-500 hover:shadow-gray-200 hover:border-gray-300 hover:bg-gray-50" >
+                            <svg class="stroke-gray-900 transition-all duration-500 group-hover:stroke-black"
+                                xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                fill="none">
+                                <path d="M11 5.5V16.5M16.5 11H5.5" stroke="" stroke-width="1.6"
+                                    stroke-linecap="round" />
+                                <path d="M11 5.5V16.5M16.5 11H5.5" stroke="" stroke-opacity="0.2" stroke-width="1.6"
+                                    stroke-linecap="round" />
+                                <path d="M11 5.5V16.5M16.5 11H5.5" stroke="" stroke-opacity="0.2" stroke-width="1.6"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- -------------------------------------PRICE OF INDIVIDUEL ELEMEnt------------------------------------ -->
+                    <h6
+                        class="price text-indigo-600 font-manrope font-bold text-2xl leading-9 w-full max-w-[176px] text-center">
+                        $0
+                    </h6>
+
+
+
+                </div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 min-[550px]:gap-6 border-t border-gray-200 py-6" id="product2">
+                <div
+                    class="flex items-center flex-col min-[550px]:flex-row gap-3 min-[550px]:gap-6 w-full max-xl:justify-center max-xl:max-w-xl max-xl:mx-auto">
+                    <div class="img-box"><img src="https://pagedone.io/asset/uploads/1701162866.png" alt="perfume bottle image" class="xl:w-[140px]"></div>
+                    <div class="pro-data w-full max-w-sm ">
+                        <h5 class="font-semibold text-xl leading-8 text-black max-[550px]:text-center">Musk Rose Cooper
+                        </h5>
+                        <p
+                            class="font-normal text-lg leading-8 text-gray-500 my-2 min-[550px]:my-3 max-[550px]:text-center">
+                            Perfumes</p>
+                        <h6 class="font-medium text-lg leading-8 text-indigo-600  max-[550px]:text-center">$150
+                            <i class=" heart fa-lg fa-regular fa-heart" style="color: #121fd7;"></i>
+                        </h6>
+                    </div>
+                </div>
+                <div
+                    class="flex items-center flex-col min-[550px]:flex-row w-full max-xl:max-w-xl max-xl:mx-auto gap-2">
+                    <h6 class="font-manrope font-bold text-2xl leading-9 text-black w-full max-w-[176px] text-center">
+
+
+                         <!----------------------------------------DEELETE BUTTON------------------------------------------------------>
+                        <button class=" delete px-4 py-2 border border-gray-300 rounded-full hover:bg-gray-50 transition-all">X</button> 
+                         <span class="text-sm text-gray-300 ml-3 lg:hidden whitespace-nowrap">(Remove Product
+                            )</span></h6>
+
+
+                    <div class="flex items-center w-full mx-auto justify-center">
+
+                        <!--------------------------------- SUBSTRUCTION BUTTON ---------------------------------------------------->
+                        <button
+                            class=" substraction group rounded-l-full px-6 py-[18px] border border-gray-200 flex items-center justify-center shadow-sm shadow-transparent transition-all duration-500 hover:shadow-gray-200 hover:border-gray-300 hover:bg-gray-50">
+                            <svg class="stroke-gray-900 transition-all duration-500 group-hover:stroke-black"
+                                xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                fill="none">
+                                <path d="M16.5 11H5.5" stroke="" stroke-width="1.6" stroke-linecap="round" />
+                                <path d="M16.5 11H5.5" stroke="" stroke-opacity="0.2" stroke-width="1.6"
+                                    stroke-linecap="round" />
+                                <path d="M16.5 11H5.5" stroke="" stroke-opacity="0.2" stroke-width="1.6"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+
+                        <!-- -------------------------------------------INPUT VALUE--------------------------------------------------- -->
+                        <input type="text"
+                            class="quantity border-y border-gray-200 outline-none text-gray-900 font-semibold text-lg w-full max-w-[118px] min-w-[80px]  py-[15px] text-center "
+                            value="0">
+
+                         <!-- ------------------------------------------ADDDITION BUTTON ---------------------------------------------->
+                        <button
+                            class="addition group rounded-r-full px-6 py-[18px] border border-gray-200 flex items-center justify-center shadow-sm shadow-transparent transition-all duration-500 hover:shadow-gray-200 hover:border-gray-300 hover:bg-gray-50" >
+                            <svg class="stroke-gray-900 transition-all duration-500 group-hover:stroke-black"
+                                xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                fill="none">
+                                <path d="M11 5.5V16.5M16.5 11H5.5" stroke="" stroke-width="1.6"
+                                    stroke-linecap="round" />
+                                <path d="M11 5.5V16.5M16.5 11H5.5" stroke="" stroke-opacity="0.2" stroke-width="1.6"
+                                    stroke-linecap="round" />
+                                <path d="M11 5.5V16.5M16.5 11H5.5" stroke="" stroke-opacity="0.2" stroke-width="1.6"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+
+
+                    </div>
+
+                    <!-- -------------------------------------PRICE OF INDIVIDUEL ELEMEnt------------------------------------ -->
+                    <h6
+                        class="price text-indigo-600 font-manrope font-bold text-2xl leading-9 w-full max-w-[176px] text-center">
+                        $0
+                    </h6>
+
+
+                </div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 min-[550px]:gap-6 border-t border-gray-200 py-6" id="product3">
+                <div
+                    class="flex items-center flex-col min-[550px]:flex-row gap-3 min-[550px]:gap-6 w-full max-xl:justify-center max-xl:max-w-xl max-xl:mx-auto">
+                    <div class="img-box"><img src="https://pagedone.io/asset/uploads/1701162880.png" alt="perfume bottle image" class="xl:w-[140px]"></div>
+                    <div class="pro-data w-full max-w-sm ">
+                        <h5 class="font-semibold text-xl leading-8 text-black max-[550px]:text-center">Dusk Dark Hue
+                        </h5>
+                        <p
+                            class="font-normal text-lg leading-8 text-gray-500 my-2 min-[550px]:my-3 max-[550px]:text-center">
+                            Perfumes</p>
+                        <h6 class="font-medium text-lg leading-8 text-indigo-600  max-[550px]:text-center">$200
+                            <i class="  heart fa-lg fa-regular fa-heart" style="color: #121fd7;"></i>
+                        </h6>
+                    </div>
+                </div>
+                <div
+                    class="flex items-center flex-col min-[550px]:flex-row w-full max-xl:max-w-xl max-xl:mx-auto gap-2">
+                    <h6 class="font-manrope font-bold text-2xl leading-9 text-black w-full max-w-[176px] text-center">
+
+
+                        <!----------------------------------------DEELETE BUTTON------------------------------------------------------>
+                        <button class=" delete px-4 py-2 border border-gray-300 rounded-full hover:bg-gray-50 transition-all">X</button> 
+                        <span class="text-sm text-gray-300 ml-3 lg:hidden whitespace-nowrap">(Remove  
+                            Product)</span></h6>
+
+
+
+                    <div class="flex items-center w-full mx-auto justify-center">
+                         <!-- ----------------------------------SUBSTRUCTION BUTTON ------------------------------------------------->
+                        <button
+                            class="substraction group rounded-l-full px-6 py-[18px] border border-gray-200 flex items-center justify-center shadow-sm shadow-transparent transition-all duration-500 hover:shadow-gray-200 hover:border-gray-300 hover:bg-gray-50">
+                            <svg class="stroke-gray-900 transition-all duration-500 group-hover:stroke-black"
+                                xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                fill="none">
+                                <path d="M16.5 11H5.5" stroke="" stroke-width="1.6" stroke-linecap="round" />
+                                <path d="M16.5 11H5.5" stroke="" stroke-opacity="0.2" stroke-width="1.6"
+                                    stroke-linecap="round" />
+                                <path d="M16.5 11H5.5" stroke="" stroke-opacity="0.2" stroke-width="1.6"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+
+
+
+                        <!-- -------------------------------------------INPUT VALUE--------------------------------------------------- -->
+                        <input type="text"
+                            class=" quantity border-y border-gray-200 outline-none text-gray-900 font-semibold text-lg w-full max-w-[118px] min-w-[80px]  py-[15px] text-center "
+                             value="0">
+
+                         <!-- ------------------------------------------ADDDITION BUTTON ---------------------------------------------->
+                        <button
+                            class="addition group rounded-r-full px-6 py-[18px] border border-gray-200 flex items-center justify-center shadow-sm shadow-transparent transition-all duration-500 hover:shadow-gray-200 hover:border-gray-300 hover:bg-gray-50"  >
+                            <svg class="stroke-gray-900 transition-all duration-500 group-hover:stroke-black"
+                                xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                fill="none">
+                                <path d="M11 5.5V16.5M16.5 11H5.5" stroke="" stroke-width="1.6"
+                                    stroke-linecap="round" />
+                                <path d="M11 5.5V16.5M16.5 11H5.5" stroke="" stroke-opacity="0.2" stroke-width="1.6"
+                                    stroke-linecap="round" />
+                                <path d="M11 5.5V16.5M16.5 11H5.5" stroke="" stroke-opacity="0.2" stroke-width="1.6"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+
+
+                    </div>
+                    <!-- -------------------------------------PRICE OF INDIVIDUEL ELEMEnt------------------------------------ -->
+                    <h6
+                        class="price text-indigo-600 font-manrope font-bold text-2xl leading-9 w-full max-w-[176px] text-center">
+                        $0
+                    </h6>
+
+                    
+                </div>
+            </div>
+            <div class="bg-gray-50 rounded-xl p-6 w-full mb-8 max-lg:max-w-xl max-lg:mx-auto">
+                
+                <div class="flex items-center justify-between w-full pb-6 border-b border-gray-200">
+                    <p class="font-normal text-xl leading-8 text-gray-400">Delivery Charge</p>
+                    <h6 class="font-semibold text-xl leading-8 text-gray-900">$10</h6>
+                </div>
+                
+                <div class="flex items-center justify-between w-full py-6">
+                    <p class="font-manrope font-medium text-2xl leading-9 text-gray-900">Total</p>
+
+                    <!-- -----------------------------------------------------TOTAL PRICE-------------------------------- -->
+                    <h6 class="total font-manrope font-medium text-2xl leading-9 text-indigo-500">$10</h6>
+
+
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <script src="app.js"></script>
+    
+</body>
+</html>
